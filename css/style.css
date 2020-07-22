@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 160px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid rgb(29, 238, 245);
+    box-shadow: 0 0 5px #000;
+}
+
+.header {
+    background-color: rgb(141, 15, 224);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .wrapper {
+    justify-content: space-between;
+}
+
+.header .name_company {
+    padding: 10px 20px;
+    font-size: 60px;
+    text-align: center;
+    border: 10px double rgb(29, 238, 245);
+    border-radius: 10px;
+    color: rgb(91, 255, 27);
+}
+
+.nav {
+    /* border-bottom: 2px solid rgb(141, 15, 224); */
+    box-shadow: 0 0px 15px rgba(86, 10, 136, 0.733);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.nav li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: rgb(97, 0, 161);
+    padding: 10px 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.main .wrapper {
+    justify-content: center;
+}
+
+.main .text {
+    margin-bottom: 15px;
+}
+
+.main h1,
+.main .info h3 {
+    padding: 15px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main .img img {
+    width: 500px;
+}
+
+.footer {
+    background-color: rgb(141, 15, 224);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.footer .wrapper {
+    justify-content: space-between;
+}
+
+.footer .logo img {
+    width: 80px;
+} 
+
+.catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog a {
+    width: 25%;
+    margin: 10px;
+}
+
+.main .info h3 {
+    text-align: left;
+}
+
+.main .info .rekviz {
+    font-size: 16px;
+    color: rgb(63, 62, 62);
+}
+
+.catalog img {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .header .wrapper {
+        justify-content: center;
+    }
+
+    .header .name_company {
+        padding: 6px 12px;
+        font-size: 40px;
+        margin: 10px 5px;
+    }
+
+    .main .img img {
+        width: 300px;
+    }
+
+    .footer p {
+        margin: 10px 0;
+    }
+
+    .catalog a {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog a {
+        width: 100%;
+    }
+}
+
